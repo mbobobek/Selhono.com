@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Selhono.com</title>
+    <!-- Icon-Logo -->
+    <link rel="icon" href="./src/images/Logo-icon.svg">
+    <!-- Link Css -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <!-- Link Tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="sm:container md:container lg:container xl:container 2xl:container mx-auto p-7 ">
+            <nav class="flex items-center justify-between ">
+                <a href="/index.html">
+                    <img src="./src/images/Logo.svg" alt="Logo">
+                </a>
+                <!-- nav-menu -->
+                    <ul class="flex items-center gap-8">
+                        <li><a class="inline-block text-[#4D5053] text-xl font-medium hover:text-[#C76904] transition-all duration-300 hover:scale-110" href="/">Home</a></li>
+                        <li><a class="inline-block text-[#4D5053] text-xl font-medium hover:text-[#C76904] transition-all duration-300 hover:scale-110  " href="/">Pages</a></li>
+                        <li><a class="inline-block text-[#4D5053] text-xl font-medium hover:text-[#C76904] transition-all duration-300 hover:scale-110  " href="/">Services</a></li>
+                        <li><a class="inline-block text-[#4D5053] text-xl font-medium hover:text-[#C76904] transition-all duration-300 hover:scale-110  " href="/">Project</a></li>
+                        <li><a class="inline-block text-[#4D5053] text-xl font-medium hover:text-[#C76904] transition-all duration-300 hover:scale-110  " href="/">Blog</a></li>
+                        <li><a class="inline-block text-[#4D5053] text-xl font-medium hover:text-[#C76904] transition-all duration-300 hover:scale-110  " href="/">Contact</a></li>
+                    </ul>
+                  <!-- Tayyor koddan foydalandim  -->
+
+                <div class="relative flex items-center">
+                    <!-- Search Input (Initially Hidden) -->
+                    <div id="search-box" class="absolute right-full -mr-2 w-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                      <input
+                        type="search"
+                        class="w-48 px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="Search..."
+                      />
+                    </div>
+                  
+                    <!-- Search Icon -->
+                    <button id="search-btn" class="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-gray-600">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  <script>
+                    const searchBtn = document.getElementById("search-btn");
+                    const searchBox = document.getElementById("search-box");
+                  
+                    searchBtn.addEventListener("click", () => {
+                      if (searchBox.classList.contains("opacity-0")) {
+                        searchBox.classList.remove("opacity-0", "w-0");
+                        searchBox.classList.add("opacity-100", "w-48");
+                      } else {
+                        searchBox.classList.remove("opacity-100", "w-48");
+                        searchBox.classList.add("opacity-0", "w-0");
+                      }
+                    });
+                  </script>       
+            </nav>
+            <!-- Hero -->
+            <div class="h-[100vh] w-full bg-[url('/src/images/hero-bg.png')] bg-cover bg-center mt-20 rounded-tl-[100px] rounded-br-[100px] px-[30px] py-[80px]">
+              <h1 class="p-text text-[64px] max-w-[700px] text-white" >Let's make your home beautiful together</h1>
+              <p class="s-text text-[22px] max-w-[470px]">There are many variations of the passages of lorem Ipsum fromavailable, majority.</p>
+              <a class="w-[220px] b-text text-white flex items-center gap-2 text-lg py-[22px] px-[48px] bg-color rounded-2xl mt-10 transition-all duration-300 hover:bg-white  " href="/">Get Started
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+    </div>            
+    </header>
+    <!-- main -->
+    <main>
+
+      <div class="sm:container md:container lg:container xl:container 2xl:container mx-auto p-7">
+        
+      </div>
+
+    </main>
+    <!-- footer -->
+    <footer>
+
+    </footer>
+</body>
+</html>

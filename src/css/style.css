@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary:#CDA274;
+    --text-hover:#C76904;
+    --secondary-text:#4D5053;
+    /* Fonts */
+    --inter: "Inter", sans-serif;
+    --jost: "Jost", sans-serif;
+    --dm-serif:"DM Serif Display", sans-serif;
+}
+.bg-color{
+    background-color: var(--primary);
+}
+.bg-color:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    backdrop-filter: blur(10px);
+}
+.p-text{
+    font-family: var(--dm-serif);
+}
+.s-text{
+    font-family: var(--jost);
+    color: var(--secondary-text);
+}
+.b-text{
+    font-family: var(--inter);
+}
