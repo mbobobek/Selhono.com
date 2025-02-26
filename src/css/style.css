@@ -19,11 +19,21 @@
 }
 .p-text{
     font-family: var(--dm-serif);
+    
 }
-.s-text{
+.s-text1{
     font-family: var(--jost);
     color: var(--secondary-text);
 }
+.s-text{
+    font-family: var(--jost);
+    color: white;
+}
 .b-text{
     font-family: var(--inter);
+    color: white;
+}
+.b-text2{
+    font-family: var(--inter);
+    color: #4D5053;
 }
